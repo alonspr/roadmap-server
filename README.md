@@ -8,11 +8,11 @@ npm install
 ```
 
 ## Run
-``
+```
 mongod
 
 npm run dev
-``
+```
 
 ## Build and serve
 ```
