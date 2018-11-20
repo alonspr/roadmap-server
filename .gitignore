@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# Output
+/build
+
 # misc
 .DS_Store
 
