@@ -1,5 +1,7 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 var _express = _interopRequireDefault(require("express"));
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
@@ -15,8 +17,6 @@ var _routes = _interopRequireDefault(require("./routes"));
 var _auth = require("./middleware/auth");
 
 var _error = require("./middleware/error");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express.default)();
 var port = process.env.PORT || 5000; // connect to mongodb
