@@ -17,6 +17,7 @@ npm run dev
 ## Build and serve
 ```
 npm run build
+
 npm run serve
 ```
 
