@@ -3,12 +3,14 @@
 Node, Express and MongoDB REST Service
 
 ## Installation
-```npm install
+```
+npm install
 ```
 
 ## Run
 ``
 mongod
+
 npm run dev
 ``
 
