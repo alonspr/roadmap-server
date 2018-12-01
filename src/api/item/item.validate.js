@@ -13,7 +13,7 @@ const item = {
 };
 
 // Validates POST request
-export const validateCreateItems = celebrate({
+export const validateCreateItem = celebrate({
     body: Joi.object().keys({
         name: item.name.required(),
         phone: item.phone.required(),
