@@ -1,4 +1,4 @@
-import Item from '../models/items';
+import Item from './items.model';
 
 export async function getItems (req, res) {
     try {

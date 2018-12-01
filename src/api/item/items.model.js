@@ -10,6 +10,8 @@ const ItemSchema = new mongoose.Schema({
     phone: {
         type: String,
         required: [true, 'Phone is required'],
+        minlength: 10,
+        maxlength: 16,
         unique: true,
     },
     city: {
