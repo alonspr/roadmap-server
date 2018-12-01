@@ -21,6 +21,10 @@ export async function createItem (req, res) {
 export async function modifyItem (req, res) {
     try {
         const { id: _id } = req.params;
+
+        if (Object.keys(req.body).length === 0) {
+            throw new Error('Please provide data to modify');
+        }
         const updated = await Item.findByIdAndUpdate(_id, req.body, {
             new: true, // returns the updated object after the request
             runValidators: true, // make sure to validate new object by the schema
