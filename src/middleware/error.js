@@ -17,7 +17,7 @@ export function notFound(req, res, next) {
 }
 
 // error response
-export function serverError(err, req, res) {
+export function serverError(err, req, res, next) {
     console.log('error 404:', err.message);
     res.status(err.status).json({ error: err.message });
 }
