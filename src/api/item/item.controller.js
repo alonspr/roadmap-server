@@ -1,6 +1,6 @@
 import Item from './items.model';
 
-export async function getItems (req, res) {
+export async function getItems(req, res) {
     try {
         const items = await Item.find({});
         res.send({ items });
@@ -9,7 +9,7 @@ export async function getItems (req, res) {
     }
 }
 
-export async function createItem (req, res) {
+export async function createItem(req, res) {
     try {
         const item = await Item.create(req.body);
         res.send({ item });
@@ -18,7 +18,7 @@ export async function createItem (req, res) {
     }
 }
 
-export async function modifyItem (req, res) {
+export async function modifyItem(req, res) {
     try {
         const { id: _id } = req.params;
 
@@ -29,13 +29,13 @@ export async function modifyItem (req, res) {
             new: true, // returns the updated object after the request
             runValidators: true, // make sure to validate new object by the schema
         });
-        res.send({ updated }); 
+        res.send({ updated });
     } catch (err) {
         res.status(400).send({ error: err.message });
     }
 }
 
-export async function deleteItem (req, res) {
+export async function deleteItem(req, res) {
     try {
         const { id: _id } = req.params;
         const deleted = await Item.findByIdAndRemove({ _id });

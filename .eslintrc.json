@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": ["error", 4, {
+            "ignoreComments": true
+        }],
+        "import/no-named-default": 0,
+        "no-console": "off",
+        "import/newline-after-import": "off",
+        "object-curly-newline": "off"
+    }
+}
